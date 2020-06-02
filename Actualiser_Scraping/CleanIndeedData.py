@@ -176,11 +176,6 @@ def getRegion(df):
 def CleanScrapedData(df):
 
 # 1. Import the scraped data from indeed website
-    #df = pd.read_csv("data_full.csv",na_values = 'None')
-    #df2 = pd.read_csv("devops_withoutDouble.csv",na_values = 'None')
-    #df3 =  pd.read_csv("software+engineer.csv",na_values = 'None')
-    #df4 = pd.read_csv('more_data.csv', na_values = 'None')
-    #df = pd.concat([df, df2, df3, df4])
     df=df.replace('None', np.nan)
     print('initial data shape is ',df.shape)
     df = df[~df.duplicated(keep='first')] 
