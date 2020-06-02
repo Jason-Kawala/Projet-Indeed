@@ -27,8 +27,8 @@ driver = webdriver.Chrome(options=options)
 driver = webdriver.Chrome("C:/Users/utilisateur/Desktop/Simplon/Python/ML/Projet-Indeed/chromedriver")
 driver.maximize_window()
 
-#jobs = ['big+data', 'data+scientist', 'data+analyst', 'data+engineer', 'machine+learning','business+intelligence', 'web+developper', 'software+engineer', 'devops']
-jobs=['data+scientist']
+jobs = ['big+data', 'data+scientist', 'data+analyst', 'data+engineer', 'machine+learning','business+intelligence', 'web+developper', 'software+engineer', 'devops']
+#jobs=['data+scientist']
 
 for j in jobs:
     driver.delete_all_cookies()
